@@ -1,51 +1,24 @@
-// import React from 'react';
+import React from 'react';
+import Header from "./Header";
+import Footer from './Footer';
+import FindBooksControl from "./FindBooksControl";
 
-import StepWizard from 'react-step-wizard';
+function App() {
+  return (
+  <React.Fragment>
+    <Header />
+    <div class = "container">
+      <div class="row">
+        <div class="col-md-4">
+          <FindBooksControl />
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+    </div>
+    <Footer />
+  </React.Fragment>
+  );
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import Header from "./Header";
-// import Footer from './Footer';
-// import SuggesterControl from "./SuggesterControl";
-
-// function App() {
-//   return (
-//   <React.Fragment>
-//     <Header />
-//     <div class = "container">
-//       <div class="row">
-//         <div class="col-md-4">
-//           <SuggesterControl />
-//         </div>
-//         <div class="col-md-4">
-//         </div>
-//       </div>
-//     </div>
-
-//   </React.Fragment>
-//   );
-// }
-
-// export default App; 
+export default App; 
