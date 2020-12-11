@@ -3,6 +3,7 @@
 - Reading about Google Books API : https://developers.google.com/books
   - API acquired
 - Researching about Goodreads API : https://www.goodreads.com/api/documentation
+- Start forming diagram for components build out. Reading : https://konstantinmuenster.medium.com/how-to-plan-and-organize-a-react-project-by-building-a-weather-app-9
 
 
 
