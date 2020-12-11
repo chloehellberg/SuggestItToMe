@@ -1,70 +1,197 @@
-# Getting Started with Create React App
+### Research For Project 12.11.20
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Reading about Google Books API : https://developers.google.com/books
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Suggest It To Me
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Console application blah blah blah. Built: December 10th, 2020
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### <a href="https://github.com/chloehellberg">By: Chloe Hellberg</a> 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img src="sitting-reading.png">
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------
+### <u>Table of Contents</u>
+* <a href="#🌐-about-the-project">About the Project</a>
+    * <a href="#📖-description">Description and Components Diagram</a>
+    * <a href="#🦠-known-bugs">Known Bugs</a>
+    * <a href="#🛠-built-with">Built With</a>
+* <a href="#🏁-getting-started">Getting Started</a>
+    * <a href="#📋-prerequisites">Prerequisites</a>
+    * <a href="#⚙️-setup-and-use">Setup and Use</a>
+* <a href="#🤝-contributors">Auxiliary</a>
+    * <a href="#🤝-contributors">Contributors</a>
+    * <a href="#✉️-contact-and-support">Contact</a>
+    * <a href="#⚖️-license">License</a>
+    
+------------------------------
+
+## 🌐 About the Project
+
+### 📖 Description
+
+This project utilizes React to create an imaginary tap room where a bar can store and track their kegs. Application allows a user to:
+  - See full list/menu of all available kegs.
+  - Submit a form to add a new keg to the list.
+  - Ability to click on a keg to see its details.
+    - For Each Keg: See its name, brand, price, quantity and style/type.
+  - See how many pints are left in a keg (full keg has roughly 124 pints).
+  - Ability to click a button on each keg to sell a pint of it and quantity of keg will descrease the number of pints left by 1. Pints should not be able to go below 0.
+  - Ability to "restock" keg once keg is empty and hits 0 pints.
+  - Keg will update to say "Almost Empty" when it hits 10 pints left and "Out of Stock" when it hits 0 pints left.
+
+### Tap Room Components Diagram
+
+<img src="./TapRoomComponents.png">
+
+
+### 🦠 Known Bugs
+
+* None known yet. <a href="https://github.com/chloehellberg/TapRoom/issues">Please report if you discover any.</a>
+
+### 🛠 Built With
+* [React](https://reactjs.org/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [HTML5](https://html.com/html5/)
+* [Markdown](https://daringfireball.net/projects/markdown/)
+
+------------------------------
+
+## 🏁 Getting Started
+
+### 📋 Prerequisites
+
+### Interactive Development Environment
+
+  &emsp;To view or edit the document which may include some HTML code, you will need an code editor or text editor. The popular open-source choices for an code editor are Atom and VisualStudio Code.
+
+  1) Code Editor Download:
+     * Option 1: [Atom](https://nodejs.org/en/)
+     * Option 2: [VisualStudio Code](https://www.npmjs.com/)
+  2) Click the download most applicable to your OS and system.
+  3) Wait for download to complete, then install -- Windows will run the setup exe and macOS will drag and drop into applications.
+  4) Optionally, create a [GitHub Account](https://github.com)
+
+### ⚙️ Setup and Use
+
+  #### Cloning
+
+  1) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
+  2) Open up your system Terminal or GitBash, navigate to your desktop with the command: `cd Desktop`, or whichever location suits you best.
+  3) Clone the repository to your desktop: `$ git clone https://github.com/chloehellberg/TapRoom`
+  4) Run the command `cd tap-room` to enter into the project directory.
+  5) View or Edit:
+      * Code Editor - Run the command `atom .` or `code .` to open the project in Atom or VisualStudio Code respectively for review and editing.
+      * Text Editor - Open by double clicking on any of the files to open in a text editor.
+  6) In the project directory (tap-room), type `npm start` to run the application in development mode.  Open [http://localhost:3000](http://localhost:3000) to view it in the browser. Page will reload if you make edits. You will also see any lint errors in the console.
+
+
+  #### Download
+
+  1) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
+  2) Click 'Download ZIP' and extract the directory to whichever location suits you best.
+  3) Open by double clicking on any of the files to open in a text editor.
+
+
+
+#### Learn More
+  - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  - You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - To learn React, check out the [React documentation](https://reactjs.org/).
+
+------------------------------
+
+### 🤝 Contributors
+
+| Author | GitHub | Email |
+|--------|:------:|:-----:|
+| [Chloe Hellberg](https://linkedin.com/in/chloehellberg) | [chloehellberg](https://github.com/chloehellberg) |  [chloe.hellberg@gmail.com](mailto:chloehellberg@gmail.com) |
+
+
+------------------------------
+
+### ✉️ Contact and Support
+
+If you have any feedback or concerns, please contact one of the contributors.
+
+------------------------------
+
+### ⚖️ License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Copyright (C) 2020 Chloe Hellberg. All Rights Reserved.
+```
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+------------------------------
+
+<center><a href="#">Return to Top</a></center>
