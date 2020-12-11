@@ -4,7 +4,7 @@
   - API acquired
 - Researching about Goodreads API : https://www.goodreads.com/api/documentation
 - Start forming diagram for components build out. Reading : https://konstantinmuenster.medium.com/how-to-plan-and-organize-a-react-project-by-building-a-weather-app-9
-
+- Watching Youtube vid about react router. Will be using instead of the toggle between pages. : https://www.youtube.com/watch?v=Law7wfdg_ls&ab_channel=DevEd
 
 
 
