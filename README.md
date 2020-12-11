@@ -1,6 +1,7 @@
 ### Research For Project 12.11.20
 
 - Reading about Google Books API : https://developers.google.com/books
+  - API acquired
 
 
 
