@@ -2,6 +2,7 @@
 
 - Reading about Google Books API : https://developers.google.com/books
   - API acquired
+- Researching about Goodreads API : https://www.goodreads.com/api/documentation
 
 
 
