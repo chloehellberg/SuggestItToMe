@@ -7,7 +7,8 @@
 - Watching Youtube vid about react router. Now following along with tutorial. Will be using instead of the toggle between pages. : https://www.youtube.com/watch?v=Law7wfdg_ls&ab_channel=DevEd
   - Testing out Google API with this tutorial - fetch is working
 - Reading about planning/organizing my app : https://konstantinmuenster.medium.com/how-to-plan-and-organize-a-react-project-by-building-a-weather-app-95175b11bd01
-
+- Book Flip CSS : http://jsfiddle.net/pixelass/TW43V/17/
+- Watching video about context API : https://www.youtube.com/watch?v=35lXWvCuM8o&ab_channel=DevEd
 
 
 
