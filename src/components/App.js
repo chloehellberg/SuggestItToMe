@@ -9,19 +9,24 @@ function App() {
   return (
   <React.Fragment>
     <Header />
-    <div className = "container">
-      <div className="row">
-        <div className="col-md-4">
-          {/* <FindBooksForm/> */}
-        </div>
-        <div className="col-md-4">
-          <FindBooksControl />
-        </div>
-      </div>
-    </div>
+    <FindBooksControl />
     <Footer />
   </React.Fragment>
   );
 }
 
 export default App; 
+
+
+
+
+// <div className = "container">
+// <div className="row">
+//   <div className="col-md-4">
+//     <FindBooksForm/>
+//   </div>
+//   <div className="col-md-4">
+//     <FindBooksControl />
+//   </div>
+// </div>
+// </div>

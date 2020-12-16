@@ -18,14 +18,12 @@ function FindBooksResult(props) {
           <div key={index} className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-               <p>Book Results</p>
+                <img className="dogPic" src={books.volumeInfo.imageLinks.smallThumbnail} alt="picture" />
               </div>
               <li>
                 <div className="flip-card-back">
                   <h3>Title: {books.volumeInfo.title}</h3>
-                  <h3>Headline: {books.title}</h3>
-                  <p><strong>Description:</strong> {books.abstract}</p>
-              
+                  <h5>Author: {books.volumeInfo.authors}</h5>
                 </div>
               </li>
             </div>
