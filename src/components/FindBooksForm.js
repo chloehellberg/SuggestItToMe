@@ -1,49 +1,49 @@
-import React from "react";
-import { v4 } from "uuid";
-import PropTypes from 'prop-types';
+// import React from "react";
+// import { v4 } from "uuid";
+// import PropTypes from 'prop-types';
 
-function FindBooksForm(props){
-  function handleFindBooksSubmission(event) {
-    event.preventDefault();
-    const newBookSearch = {
-      name: event.target.name.value,
-      quantity: event.target.name.value,
-      brand: event.target.brand.value,
-      price: event.target.price.value,
-      style: event.target.style.value,
-      status: event.target.style.value,
-      id: v4()
-    }
-    props.onFindBooksSubmission(newBookSearch);
+// function FindBooksForm(props){
+//   function handleFindBooksSubmission(event) {
+//     event.preventDefault();
+//     const newBookSearch = {
+//       name: event.target.name.value,
+//       quantity: event.target.name.value,
+//       brand: event.target.brand.value,
+//       price: event.target.price.value,
+//       style: event.target.style.value,
+//       status: event.target.style.value,
+//       id: v4()
+//     }
+//     props.onFindBooksSubmission(newBookSearch);
   
-  }
+//   }
   
-  return (
-    <React.Fragment>
-      <form onSubmit={handleFindBooksSubmission}>
-        <input class="submission"
-          type='text'
-          name='name'
-          placeholder = 'Name' />
-          <input class="submission"
-          type='text'
-          name='brand' 
-          placeholder = 'Brand'/>
-        <input class="submission"
-          name='price'
-          placeholder='Price per Pint' />
-        <input class="submission"
-          type='text'
-          name="style"
-          placeholder = 'Style'/>
-        <button class="btn btn-info" type='submit'>Find Books</button>
-      </form>
-    </React.Fragment>
-  );
-}
+//   return (
+//     <React.Fragment>
+//       <form onSubmit={handleFindBooksSubmission}>
+//         <input class="submission"
+//           type='text'
+//           name='name'
+//           placeholder = 'Name' />
+//           <input class="submission"
+//           type='text'
+//           name='brand' 
+//           placeholder = 'Brand'/>
+//         <input class="submission"
+//           name='price'
+//           placeholder='Price per Pint' />
+//         <input class="submission"
+//           type='text'
+//           name="style"
+//           placeholder = 'Style'/>
+//         <button class="btn btn-info" type='submit'>Find Books</button>
+//       </form>
+//     </React.Fragment>
+//   );
+// }
 
-FindBooksForm.propTypes = {
-  onFindBooksSubmission: PropTypes.func
-};
+// FindBooksForm.propTypes = {
+//   onFindBooksSubmission: PropTypes.func
+// };
 
-export default FindBooksForm;
+// export default FindBooksForm;

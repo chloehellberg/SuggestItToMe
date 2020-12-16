@@ -22,10 +22,10 @@ export const makeApiCall = () => {
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
-          dispatch(getHeadlinesSuccess(jsonifiedResponse.results));
+          dispatch(getBooksSuccess(jsonifiedResponse.results));
         })
       .catch((error) => {
-        dispatch(getHeadlinesFailure(error));
+        dispatch(getBooksFailure(error));
       });
   }
 }
