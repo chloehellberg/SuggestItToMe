@@ -23,17 +23,36 @@ export const toggleBookFormShowing = () => ({
   type: c.TOGGLE_BOOK_FORM_SHOWING
 });
 
+
 export const makeApiCall = () => {
   return dispatch => {
     dispatch(requestBooks);
-    return fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${process.env.REACT_APP_API_KEY}`)
+    return fetch('https://www.googleapis.com/books/v1/volumes?q=subject:fiction')
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
-          dispatch(getBooksSuccess(jsonifiedResponse.results));
+          dispatch(getBooksSuccess(jsonifiedResponse.items));
         })
       .catch((error) => {
         dispatch(getBooksFailure(error));
       });
   }
 }
+
+
+// export const makeApiCall = () => {
+//   return dispatch => {
+//     dispatch(requestBooks);
+//     return fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${process.env.REACT_APP_API_KEY}`)
+//       .then(response => response.json())
+//       .then(
+//         (jsonifiedResponse) => {
+//           dispatch(getBooksSuccess(jsonifiedResponse.results));
+//         })
+//       .catch((error) => {
+//         dispatch(getBooksFailure(error));
+//       });
+//   }
+// }
+
+
