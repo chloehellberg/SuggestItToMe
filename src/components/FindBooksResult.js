@@ -1,7 +1,7 @@
 import React from "react";
-import Books from "./Books";
+// import Books from "./Books";
 import PropTypes from "prop-types"
-import { useState } from 'react';
+// import { useState } from 'react';
 
 function FindBooksResult(props) {
   
@@ -18,7 +18,7 @@ function FindBooksResult(props) {
           <div key={index} className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img className="dogPic" src={books.volumeInfo.imageLinks.smallThumbnail} alt="picture" />
+                <img className="dogPic" src={books.volumeInfo.imageLinks.smallThumbnail} alt="googleAPIImage" />
               </div>
               <li>
                 <div className="flip-card-back">

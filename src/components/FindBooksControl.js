@@ -7,6 +7,9 @@ import PropTypes from 'prop-types';
 import * as a from './../actions';
 
 class FindBooksControl extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
   handleClick = () => {
     console.log("Handle Click Reached");
@@ -26,15 +29,15 @@ class FindBooksControl extends React.Component {
     let currentlyVisibleState = null;
     let buttonText = null;
     if (this.props.bookResultsShowing) {
-      currentlyVisibleState = <FindBooksResult callApi={this.props.findBooksResult} books={this.props.books} />
-      buttonText = "Return to Find Books Form"
+      currentlyVisibleState = <FindBooksResult books={this.props.books}/>
+      buttonText = "Return to Find Books Form";
     } else {
       currentlyVisibleState = <FindBooksForm />
-      buttonText = "Search Through Books (FindBooksResult)"
+      buttonText = "Search For Books";
     }
     return (
       <React.Fragment>
-        {currentlyVisibleState};
+        {currentlyVisibleState}
         <button className="btn btn-outline-dark" onClick={this.handleClick}>{buttonText}</button>
       </React.Fragment>
     );
