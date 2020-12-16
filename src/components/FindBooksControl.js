@@ -1,8 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { makeApiCall } from './../actions';
+import FindBooksResult from './FindBooksResult';
+import FindBooksForm from './FindBooksForm';
+import PropTypes from 'prop-types';
+import * as a from './../actions';
 
 class FindBooksControl extends React.Component {
+
+  handleClick = () => {
+    console.log("Handle Click Reached");
+    const { dispatch } = this.props;
+    const action = a.toggleBookResultsShowing();
+    dispatch(action);
+    const action2 = a.toggleBookFormShowing();
+    dispatch(action2);
+  }
 
   componentDidMount() {
     const { dispatch } = this.props;
@@ -10,41 +23,46 @@ class FindBooksControl extends React.Component {
   }
 
   render() {
-    const { error, isLoading, books } = this.props;
-    if (error) {
-      return <React.Fragment>Error: {error.message}</React.Fragment>;
-    } else if (isLoading) {
-      return <React.Fragment>Loading...</React.Fragment>;
+    let currentlyVisibleState = null;
+    let buttonText = null;
+    if (this.props.bookResultsShowing) {
+      currentlyVisibleState = <FindBooksResult callApi={this.props.findBooksResult} books={this.props.books} />
+      buttonText = "Return to Find Books Form"
     } else {
-      return (
-        <React.Fragment>
-          <h1>Books</h1>
-          <ul>
-            {books.map((book, index) =>
-              <li key={index}>
-                <h3>{book.title}</h3>
-                <p>{book.abstract}</p>
-              </li>
-            )}
-          </ul>
-        </React.Fragment>
-      );
+      currentlyVisibleState = <FindBooksForm />
+      buttonText = "Search Through Books (FindBooksResult)"
     }
+    return (
+      <React.Fragment>
+        {currentlyVisibleState};
+        <button className="btn btn-outline-dark" onClick={this.handleClick}>{buttonText}</button>
+      </React.Fragment>
+    );
   }
+}
+
+FindBooksControl.propTypes = {
+  bookResultsShowing: PropTypes.bool,
+  bookFormShowing: PropTypes.bool,
+  books: PropTypes.object
 }
 
 const mapStateToProps = state => {
   return {
-    books: state.books,
-    isLoading: state.isLoading,
-    error: state.error
+    bookResultsShowing: state.bookResultsShowing,
+    bookFormShowing: state.bookFormShowing,
+    books: state.books
+    // books: state.books,
+    // isLoading: state.isLoading,
+    // error: state.error
   }
 }
 
-export default connect(mapStateToProps)(FindBooksControl);
+
+FindBooksControl = connect(mapStateToProps)(FindBooksControl);
 
 
-
+export default FindBooksControl;
 
 
 

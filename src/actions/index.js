@@ -15,6 +15,14 @@ export const getBooksFailure = (error) => ({
 });
 
 
+export const toggleBookResultsShowing = () => ({
+  type: c.TOGGLE_BOOK_RESULTS_SHOWING
+});
+
+export const toggleBookFormShowing = () => ({
+  type: c.TOGGLE_BOOK_FORM_SHOWING
+});
+
 export const makeApiCall = () => {
   return dispatch => {
     dispatch(requestBooks);
