@@ -17,7 +17,7 @@
 
 # Suggest It To Me
 
-### Console application using JavaScript, React and Redux. Built: December 10th, 2020
+### Console application using JavaScript, React and Redux that will attempt to expand a readers horizons by suggesting books they aren't typically inclined to read. Built: December 10th, 2020
 
 #### <a href="https://github.com/chloehellberg">By: Chloe Hellberg</a> 
 
@@ -44,15 +44,16 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-This project utilizes React to create an imaginary tap room where a bar can store and track their kegs. Application allows a user to:
-  
 
-### Capstone Initial Proposal
-- Name of Project: "Books Not Typically Suggested To You..." (Real Name WIP)
+
 - Inspiration Behind Project:
   - When I was in college I registered for an English class expecting to read the classics but isntead got an entire course devoted to utopian/dystopian science fiction. I expected to hate it and drop since I had never read any sci-fi in my life - no one had ever suggested this particular genre to me before. Of course what ended up happening was an awakening and science fiction is now counted as one of my favorite genres and thus the catalyst for this project.
 - Project Purpose or Goal:
   - What I love most about reading is that I can dive into perspectives of all different kinds of people and types of places and hopefully gain better understanding of others who aren't me. It's not helpful though when the only books suggested to me keep me in the same lane and don't allow me to expand my horizons. I'm also tired of having my Google footprint follow me around wherever I go and determine what I may like or not based on my previous experiences. I'm setting out to build the opposite of a "Books Suggested For You" application - more of a, "Books Not Typically Suggested For You" website. Perhaps there is a book or genre out there that you've never considered and no one else has thought to suggest it to you either - until now!
+  
+
+### Capstone Proposal
+- Name of Project: "Books Not Typically Suggested To You..." (Product Name WIP)
 
 - MVP (Minimum Viable Product):
   - Users can go to a suggestion form, choose a few genres they typically like (ex. Historical Fiction, Adventure, Mystery) and product will spit out three book suggestions that doln't fall within those categories
