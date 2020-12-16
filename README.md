@@ -10,14 +10,14 @@
 - Book Flip CSS : http://jsfiddle.net/pixelass/TW43V/17/
 - Watching video about context API : https://www.youtube.com/watch?v=35lXWvCuM8o&ab_channel=DevEd
 
-
+### Research For Project 12.16.20
 
 
 
 
 # Suggest It To Me
 
-### Console application blah blah blah. Built: December 10th, 2020
+### Console application using JavaScript, React and Redux. Built: December 10th, 2020
 
 #### <a href="https://github.com/chloehellberg">By: Chloe Hellberg</a> 
 
@@ -25,52 +25,10 @@
 <img src="sitting-reading.png">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ------------------------------
 ### <u>Table of Contents</u>
 * <a href="#🌐-about-the-project">About the Project</a>
-    * <a href="#📖-description">Description and Components Diagram</a>
+    * <a href="#📖-description">Description + Capstone Proposal + Components Diagram</a>
     * <a href="#🦠-known-bugs">Known Bugs</a>
     * <a href="#🛠-built-with">Built With</a>
 * <a href="#🏁-getting-started">Getting Started</a>
@@ -86,25 +44,49 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-
 This project utilizes React to create an imaginary tap room where a bar can store and track their kegs. Application allows a user to:
-  - See full list/menu of all available kegs.
-  - Submit a form to add a new keg to the list.
-  - Ability to click on a keg to see its details.
-    - For Each Keg: See its name, brand, price, quantity and style/type.
-  - See how many pints are left in a keg (full keg has roughly 124 pints).
-  - Ability to click a button on each keg to sell a pint of it and quantity of keg will descrease the number of pints left by 1. Pints should not be able to go below 0.
-  - Ability to "restock" keg once keg is empty and hits 0 pints.
-  - Keg will update to say "Almost Empty" when it hits 10 pints left and "Out of Stock" when it hits 0 pints left.
+  
 
-### Tap Room Components Diagram
+### Capstone Initial Proposal
+- Name of Project: "Books Not Typically Suggested To You..." (Real Name WIP)
+- Inspiration Behind Project:
+  - When I was in college I registered for an English class expecting to read the classics but isntead got an entire course devoted to utopian/dystopian science fiction. I expected to hate it and drop since I had never read any sci-fi in my life - no one had ever suggested this particular genre to me before. Of course what ended up happening was an awakening and science fiction is now counted as one of my favorite genres and thus the catalyst for this project.
+- Project Purpose or Goal:
+  - What I love most about reading is that I can dive into perspectives of all different kinds of people and types of places and hopefully gain better understanding of others who aren't me. It's not helpful though when the only books suggested to me keep me in the same lane and don't allow me to expand my horizons. I'm also tired of having my Google footprint follow me around wherever I go and determine what I may like or not based on my previous experiences. I'm setting out to build the opposite of a "Books Suggested For You" application - more of a, "Books Not Typically Suggested For You" website. Perhaps there is a book or genre out there that you've never considered and no one else has thought to suggest it to you either - until now!
 
-<img src="./TapRoomComponents.png">
+- MVP (Minimum Viable Product):
+  - Users can go to a suggestion form, choose a few genres they typically like (ex. Historical Fiction, Adventure, Mystery) and product will spit out three book suggestions that doln't fall within those categories
+  - Or, Users go to a suggestion form, choose a genre they would like to explore (ex. Historical Fiction, Adventure, Mystery) and how many books they would like suggested. On submit, form pulls the genre keyword and then spits out say Mystery novels that are all vastly different based on keywords.
+  - Suggestion form may work as guided flow that splits off paths and goes one way or another depending on what was previously chosen. Rather than having a one page entry form.
+
+- What tools, frameworks, libraries, APIs, modules and/or other resources that will be utilized to create the MVP:
+  - Framework/Language: JavaScript/React/Redux
+  - Google API for pulling book information
+
+- If finished with MVP, additional features to work on:
+  - Authorization/Authentication abilities
+    * User will be able to keep track of books they've previously read (a bookshelf feature).
+    * User will be able to continuously base their suggestions off of what they've previously read.
+  - More than one suggestion at a time
+    * User can choose how many book suggestions they want at a time rather than a static 3 options.
+    * User also has ability to say "no" to a book and have another suggestion pop up.
+  - User can enter books they've previously read on the form and will take those into consideration when suggesting books to read.
+  - Add an option to choose book size/length as a parameter search. Additional filter options.
+
+- What additional tools, frameworks, libraries, APIs or other resources to achieve addtional features:
+  - Goodreads API for pulling in previous books read.
+  - Firebase if I add authorization/authentication features.
+
+
+
+### Suggest It To Me Components Diagram
+
+<img src="./SITMComponents-v1.png">
 
 
 ### 🦠 Known Bugs
 
-* None known yet. <a href="https://github.com/chloehellberg/TapRoom/issues">Please report if you discover any.</a>
+* None known yet. <a href="https://github.com/chloehellberg/SuggestItToMe/issues">Please report if you discover any.</a>
 
 ### 🛠 Built With
 * [React](https://reactjs.org/)
@@ -135,8 +117,8 @@ This project utilizes React to create an imaginary tap room where a bar can stor
 
   1) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
   2) Open up your system Terminal or GitBash, navigate to your desktop with the command: `cd Desktop`, or whichever location suits you best.
-  3) Clone the repository to your desktop: `$ git clone https://github.com/chloehellberg/TapRoom`
-  4) Run the command `cd tap-room` to enter into the project directory.
+  3) Clone the repository to your desktop: `$ git clone https://github.com/chloehellberg/SuggestItToMe`
+  4) Run the command `cd suggest-it-to-me` to enter into the project directory.
   5) View or Edit:
       * Code Editor - Run the command `atom .` or `code .` to open the project in Atom or VisualStudio Code respectively for review and editing.
       * Text Editor - Open by double clicking on any of the files to open in a text editor.
