@@ -9,6 +9,22 @@ import * as a from './../actions';
 class FindBooksControl extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      query: []
+    };
+  }
+
+  // handleSearchParameters = (newSearch) => {
+  //   const newQuery = this.state.query.concat(newSearch);
+  //   this.setState({
+  //     query: newQuery
+  //   });
+  // }
+
+  handleSearchParameters = (newSearch) => {
+    const { dispatch } = this.props;
+    const action = a.searchBooks(newSearch);
+    dispatch(action);
   }
 
   handleClick = () => {
@@ -29,7 +45,7 @@ class FindBooksControl extends React.Component {
     let currentlyVisibleState = null;
     let buttonText = null;
     if (this.props.bookResultsShowing) {
-      currentlyVisibleState = <FindBooksResult books={this.props.books}/>
+      currentlyVisibleState = <FindBooksResult books={this.props.books} onNewSearch={this.handleSearchParameters}/>
       buttonText = "Return to Find Books Form";
     } else {
       currentlyVisibleState = <FindBooksForm />
@@ -47,14 +63,16 @@ class FindBooksControl extends React.Component {
 FindBooksControl.propTypes = {
   bookResultsShowing: PropTypes.bool,
   bookFormShowing: PropTypes.bool,
-  books: PropTypes.object
+  books: PropTypes.object,
+  newSearch: PropTypes.array
 }
 
 const mapStateToProps = state => {
   return {
     bookResultsShowing: state.bookResultsShowing,
     bookFormShowing: state.bookFormShowing,
-    books: state.books
+    books: state.books,
+    newSearch: state.newSearch
     // books: state.books,
     // isLoading: state.isLoading,
     // error: state.error

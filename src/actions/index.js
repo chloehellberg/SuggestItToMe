@@ -24,10 +24,19 @@ export const toggleBookFormShowing = () => ({
 });
 
 
+export const searchBooks = (query) => {
+  return {
+    type: c.SEARCH_BOOKS,
+    query: query
+  };
+};
+
+
 export const makeApiCall = () => {
+  let query = [];
   return dispatch => {
     dispatch(requestBooks);
-    return fetch('https://www.googleapis.com/books/v1/volumes?q=subject:fiction')
+    return fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${query}`)
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
@@ -38,6 +47,25 @@ export const makeApiCall = () => {
       });
   }
 }
+
+
+
+//Working with static fiction route
+
+// export const makeApiCall = () => {
+//   return dispatch => {
+//     dispatch(requestBooks);
+//     return fetch('https://www.googleapis.com/books/v1/volumes?q=subject:fiction')
+//       .then(response => response.json())
+//       .then(
+//         (jsonifiedResponse) => {
+//           dispatch(getBooksSuccess(jsonifiedResponse.items));
+//         })
+//       .catch((error) => {
+//         dispatch(getBooksFailure(error));
+//       });
+//   }
+// }
 
 
 // export const makeApiCall = () => {

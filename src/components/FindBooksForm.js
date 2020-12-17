@@ -1,13 +1,35 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 
 function FindBooksForm(props){
+
+  function handleSearchParameters(event) {
+    event.preventDefault();
+    const newSearch = {
+      query: event.target.query.value
+    }
+    props.onNewSearch(newSearch);
+  }
+
+ 
   return(
     <React.Fragment>
       <h1>Here is a form to fill out.</h1>
+      <form onSubmit={handleSearchParameters}>
+        <input class="submission"
+          type='text'
+          name='query'
+          placeholder='Search' />
+        <button class="btn btn-info" type='submit'>New Search</button>
+      </form>
     </React.Fragment>
   )
 }
+
+FindBooksForm.propTypes = {
+  onNewSearch: PropTypes.func
+};
 
 export default FindBooksForm;
 
@@ -19,13 +41,23 @@ export default FindBooksForm;
 
 
 
+// return(
+//   <React.Fragment>
+//     <h1>Here is a form to fill out.</h1>
+//   </React.Fragment>
+// )
+// }
+
+// export default FindBooksForm;
 
 
 
 
 
+// const []
+  // function searchParameters() {
 
-
+  // }
 
 
 
