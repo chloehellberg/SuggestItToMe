@@ -10,9 +10,9 @@
 - Book Flip CSS : http://jsfiddle.net/pixelass/TW43V/17/
 - Watching video about context API : https://www.youtube.com/watch?v=35lXWvCuM8o&ab_channel=DevEd
 
-### Research For Project 12.16.20
+### Research For Project 12.17.20
 
-
+- Reading about adding a multi-filter function to project : https://medium.com/better-programming/creating-a-multi-filter-function-to-filter-out-multiple-attributes-javascript-react-rails-5aad8e272142
 
 
 # Suggest It To Me
