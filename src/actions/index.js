@@ -32,8 +32,7 @@ export const searchBooks = (query) => {
 };
 
 
-export const makeApiCall = () => {
-  let query = [];
+export const makeApiCall = (query) => {
   return dispatch => {
     dispatch(requestBooks);
     return fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${query}`)

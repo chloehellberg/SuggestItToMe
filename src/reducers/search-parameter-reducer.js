@@ -1,16 +1,24 @@
 import * as c from './../actions/ActionTypes';
 
-export default (state = [], action) => {
-  const { query } = action;
-  switch(action.type) {
-    case c.SEARCH_BOOKS:
-      return Object.assign({}, state, {
+// export default (state = [], action) => {
+//   const { query } = action;
+//   switch(action.type) {
+//     case c.SEARCH_BOOKS:
+//       return Object.assign({}, state, {
         
-          query: query,
+//           query: query,
          
         
-      });
-    default:
-      return state;
-  };
+//       });
+//     default:
+//       return state;
+//   };
+// };
+
+const defaultQueryState = {
+  query: []
 };
+
+export default (state = defaultQueryState, action) => {
+  return state;
+}
