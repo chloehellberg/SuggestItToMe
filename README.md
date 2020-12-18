@@ -17,6 +17,7 @@
 ### Research for Project 12.18.20
 
 - Copied repo to try another method out, but don't want to get too far away from what I have built so far. 
+- Still working on getting the API how I want it to display : https://pusher.com/tutorials/consume-restful-api-react
 
 # Suggest It To Me
 
