@@ -41,11 +41,11 @@ class FindBooksResult extends React.Component {
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                   
-                  <img className="dogPic" src={books.volumeInfo.imageLinks.smallThumbnail} alt="googleAPIImage" />
+                  <img className="dogPic" src={books.volumeInfo.imageLinks.thumbnail} alt="googleAPIImage" />
                   </div>
                   <li>
                     <div className="flip-card-back">
-                      <h3>Title: {books.volumeInfo.title}</h3>
+                      <p>Title: {books.volumeInfo.title}</p>
                       <p>Info: {books.volumeInfo.authors}</p>
                     </div>
                   </li>
