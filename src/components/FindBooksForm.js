@@ -1,37 +1,80 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import { Link, withRouter } from 'react-router-dom';
 
 
 function FindBooksForm(props){
 
-  function handleSearchParameters(event) {
-    event.preventDefault();
-    const newSearch = {
-      query: event.target.query.value
-    }
-    props.onNewSearch(newSearch);
-  }
-
- 
-  return(
-    <React.Fragment>
-      <h1>Here is a form to fill out.</h1>
-      <form onSubmit={handleSearchParameters}>
-        <input class="submission"
-          type='text'
-          name='query'
-          placeholder='Search' />
-        <button class="btn btn-info" type='submit'>New Search</button>
-      </form>
-    </React.Fragment>
+  return (
+    <nav>
+      <ul>
+        <Link to="/findbooksresult">
+          <li>Search for books</li>
+        </Link>
+      </ul>
+    </nav>
   )
 }
 
-FindBooksForm.propTypes = {
-  onNewSearch: PropTypes.func
-};
-
 export default FindBooksForm;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import PropTypes from 'prop-types';
+
+
+// function FindBooksForm(props){
+
+//   function handleSearchParameters(event) {
+//     event.preventDefault();
+//     const newSearch = {
+//       query: event.target.query.value
+//     }
+//     props.onNewSearch(newSearch);
+//   }
+
+ 
+//   return(
+//     <React.Fragment>
+//       <h1>Here is a form to fill out.</h1>
+//       <form onSubmit={handleSearchParameters}>
+//         <input class="submission"
+//           type='text'
+//           name='query'
+//           placeholder='Search' />
+//         <button class="btn btn-info" type='submit'>New Search</button>
+//       </form>
+//     </React.Fragment>
+//   )
+// }
+
+// FindBooksForm.propTypes = {
+//   onNewSearch: PropTypes.func
+// };
+
+// export default FindBooksForm;
 
 
 
