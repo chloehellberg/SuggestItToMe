@@ -12,9 +12,12 @@ class FindBooksResult extends React.Component {
       isSubmitted:false
     };
   }
+  
 
   render() {
     let { error, books, searchparam } = this.state;
+    console.log("BOOKS", books);
+    console.log("SEARCHPARAM", searchparam)
     if (error) {
       return <React.Fragment>Error: {error.message} </ React.Fragment>;
     } else if (books === undefined) {
@@ -32,15 +35,27 @@ class FindBooksResult extends React.Component {
           <FindBooksForm onSubmit={this.handleSettingSearchParam} />
          
           
-          <ul className='headingpadding'>
+          <ul className='center-align'>
             {books !== undefined && books.map((books, index) => (
-              <li className='bottompad' key={index}>
-                <h3>Title: {books.volumeInfo.title}</h3>
-                <img className="dogPic" src={books.volumeInfo.imageLinks.smallThumbnail} alt="googleAPIImage" />
-              </li>
+              <div key={index} className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                  
+                  <img className="dogPic" src={books.volumeInfo.imageLinks.smallThumbnail} alt="googleAPIImage" />
+                  </div>
+                  <li>
+                    <div className="flip-card-back">
+                      <h3>Title: {books.volumeInfo.title}</h3>
+                      <p>Info: {books.volumeInfo.authors}</p>
+                    </div>
+                  </li>
+                </div>
+
+              </div>
+
+            
             ))}
           </ul>
-       
         </React.Fragment>
       );
     }
