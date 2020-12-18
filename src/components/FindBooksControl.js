@@ -1,49 +1,49 @@
-import React from 'react';
-import FindBooksResult from './FindBooksResult';
-import FindBooksForm from './FindBooksForm';
+// import React from 'react';
+// import FindBooksResult from './FindBooksResult';
+// import FindBooksForm from './FindBooksForm';
 
-class FindBooksControl extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      error: null,
-      isLoaded: false,
-      books: [],
-      query: ''
-    };
-  }
+// class FindBooksControl extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       error: null,
+//       isLoaded: false,
+//       books: [],
+//       query: ''
+//     };
+//   }
 
-  render() {
-    let { error, books, query } = this.state;
-    if (error) {
-      return <React.Fragment>Error: {error.message}</React.Fragment>;
-    } else if (books === undefined) {
-      return (
-        <React.Fragment>
-          <h4>No books found</h4>
-        </React.Fragment>
-      )
-    } else {
-      return (
-        <React.Fragment>
-          <FindBooksResult onSubmit={this.handleSearchParameters} />
-        </React.Fragment>
-      )
-    }
-  }
-
-
-
-
-
-}
+//   render() {
+//     let { error, books, query } = this.state;
+//     if (error) {
+//       return <React.Fragment>Error: {error.message}</React.Fragment>;
+//     } else if (books === undefined) {
+//       return (
+//         <React.Fragment>
+//           <h4>No books found</h4>
+//         </React.Fragment>
+//       )
+//     } else {
+//       return (
+//         <React.Fragment>
+//           <FindBooksResult onSubmit={this.handleSearchParameters} />
+//         </React.Fragment>
+//       )
+//     }
+//   }
 
 
 
 
 
+// }
 
-export default FindBooksControl;
+
+
+
+
+
+// export default FindBooksControl;
 
 
 

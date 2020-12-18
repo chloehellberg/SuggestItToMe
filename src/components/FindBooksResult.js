@@ -1,119 +1,98 @@
-import React, { useState, useEffect } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import React from "react";
+import FindBooksForm from "./FindBooksForm";
 
-function FindBooksResult(props) {
-  
-  useEffect(() => {
-    fetchItems();
-  },[]);
-
-  const [items, setItems] = useState([]);
-
-  const fetchItems = async (query) => {
-    const data = await fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:fiction`);
-
-    const items = await data.json();
-    // console.log(items);
-
-    console.log(items.items);
-
-    setItems(items.items);
+class FindBooksResult extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      books: [],
+      searchparam: null,
+      isSubmitted:false
+    };
   }
 
-  return (
-    <React.Fragment>
-      <h1>Book Results</h1>
-      {items.map(item => (
-        <h1 key={item.id}>
-        </h1>
-      ))}
-       <ul>
-          <Link to="/">
-            <li>Return for new search</li>
-          </Link>
-        </ul>
-    </React.Fragment>
-  )
+  render() {
+    let { error, books, searchparam } = this.state;
+    if (error) {
+      return <React.Fragment>Error: {error.message} </ React.Fragment>;
+    } else if (books === undefined) {
+      return(
+        <React.Fragment>
+        <h4>No Books Found</h4>
+        <button className='btn btn-primary' onClick={this.resetMe}>Back to the search</button>
+        </React.Fragment>
+      )
+    } else {
+      console.log(searchparam)
+      console.log(this.state)
+      return (
+        <React.Fragment>
+          <FindBooksForm onSubmit={this.handleSettingSearchParam} />
+         
+          
+          <ul className='headingpadding'>
+            {books !== undefined && books.map((books, index) => (
+              <li className='bottompad' key={index}>
+                <h3>Title: {books.volumeInfo.title}</h3>
+                <img className="dogPic" src={books.volumeInfo.imageLinks.smallThumbnail} alt="googleAPIImage" />
+              </li>
+            ))}
+          </ul>
+       
+        </React.Fragment>
+      );
+    }
+  }
+ 
+  makeOmdbApiCall = (parameter) => {
+    fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${parameter}`)
+      .then((response) => response.json())
+      .then((jsonifiedResponse) => (jsonifiedResponse.items))
+      .then((jsonifiedResponse) => {
+        console.log(jsonifiedResponse)
+        this.setState({
+          isLoaded: true,
+          books: jsonifiedResponse,
+          isSubmitted: true
+        });
+      })
+      .catch((error) => {
+        this.setState({
+          isLoaded: true,
+          error,
+        });
+      });
+  };
+
+  handleSettingSearchParam = (param) => {
+    console.log('handler' + param)
+    fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${param}`) 
+    .then((response) => response.json())
+    .then((jsonifiedResponse) => (jsonifiedResponse.items))
+    .then((jsonifiedResponse) => {
+      console.log(jsonifiedResponse)
+      this.setState({
+        isLoaded: true,
+        books: jsonifiedResponse,
+        isSubmitted: true
+      });
+    })
+    .catch((error) => {
+    });
+  }
+
+
+   resetMe = (state) => {
+    this.setState({
+      error: null,
+      isLoaded: false,
+      books: [],
+      searchparam: null,
+      isSubmitted:false
+    })
+  } 
 }
 
 export default FindBooksResult;
-
-
-
-
-
-// import React from "react";
-// // import Books from "./Books";
-// import PropTypes from "prop-types"
-// // import { useState } from 'react';
-
-// function FindBooksResult(props) {
-  
-//   return (
-
-//     <React.Fragment>
-//       <h1>Book Results</h1>
-    
-
-//       <ul className="center-align">
-
-//         {props.books.books.map((books, index) =>
-        
-//           <div key={index} className="flip-card">
-//             <div className="flip-card-inner">
-//               <div className="flip-card-front">
-//                 <img className="dogPic" src={books.volumeInfo.imageLinks.smallThumbnail} alt="googleAPIImage" />
-//               </div>
-//               <li>
-//                 <div className="flip-card-back">
-//                   <h3>Title: {books.volumeInfo.title}</h3>
-//                   <h5>Author: {books.volumeInfo.authors}</h5>
-//                 </div>
-//               </li>
-//             </div>
-//           </div>
-//         )}
-
-//       </ul>
-//     </React.Fragment>
-//   );
-// }
-
-// FindBooksResult.propTypes = {
-//   books: PropTypes.object,
-//   isLoading: PropTypes.bool,
-//   error: PropTypes.string
-// }
-
-
-
-// export default FindBooksResult;
-
-
-
-
-
-
-
-// function FindBooksResult(props){
-//   return(
-//     <React.Fragment>
-//       {props.bookList.map((books) =>
-//         <Books name = {books.name}
-//         quantity = {books.quantity}
-//         status = {books.status}
-//         brand = {books.brand}
-//         price = {books.price}
-//         style = {books.style}
-//         id = {books.id}
-//         key = {books.id}/>
-//       )}
-//     </React.Fragment>
-//   );
-// }
-
-// FindBooksResult.propTypes = {
-//   bookList: PropTypes.array
-// };
-
-// export default FindBooksResult;
