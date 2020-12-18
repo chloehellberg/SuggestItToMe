@@ -24,3 +24,5 @@ yarn-error.log*
 
 .env
 /Info.txt
+
+/for-reference(dead)
