@@ -7,34 +7,37 @@ class FindBooksResult extends React.Component {
     this.state = {
       error: null,
       isLoaded: false,
-      books: [],
-      searchparam: null,
-      isSubmitted:false
+      books: []
     };
+  }
+
+
+  makeAPICall = (filter) => {
+    console.log('FILTER: ' + filter)
+    fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${filter}`) 
+    .then((response) => response.json())
+    .then((jsonifiedResponse) => (jsonifiedResponse.items))
+    .then((jsonifiedResponse) => {
+      this.setState({
+        isLoaded: true,
+        books: jsonifiedResponse,
+      });
+    })
+    .catch((error) => {
+    });
   }
   
 
   render() {
-    let { error, books, searchparam } = this.state;
+    let { error, books } = this.state;
     console.log("BOOKS", books);
-    console.log("SEARCHPARAM", searchparam)
+
     if (error) {
-      return <React.Fragment>Error: {error.message} </ React.Fragment>;
-    } else if (books === undefined) {
-      return(
-        <React.Fragment>
-        <h4>No Books Found</h4>
-        <button className='btn btn-primary' onClick={this.resetMe}>Back to the search</button>
-        </React.Fragment>
-      )
+      return <React.Fragment>Error: {error.message} </ React.Fragment>
     } else {
-      console.log(searchparam)
-      console.log(this.state)
       return (
         <React.Fragment>
-          <FindBooksForm onSubmit={this.handleSettingSearchParam} />
-         
-          
+          <FindBooksForm onSubmit={this.makeAPICall} />
           <ul className='center-align'>
             {books !== undefined && books.map((books, index) => (
               <div key={index} className="flip-card">
@@ -50,64 +53,13 @@ class FindBooksResult extends React.Component {
                     </div>
                   </li>
                 </div>
-
               </div>
-
-            
             ))}
           </ul>
         </React.Fragment>
       );
     }
   }
- 
-  makeOmdbApiCall = (parameter) => {
-    fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${parameter}`)
-      .then((response) => response.json())
-      .then((jsonifiedResponse) => (jsonifiedResponse.items))
-      .then((jsonifiedResponse) => {
-        console.log(jsonifiedResponse)
-        this.setState({
-          isLoaded: true,
-          books: jsonifiedResponse,
-          isSubmitted: true
-        });
-      })
-      .catch((error) => {
-        this.setState({
-          isLoaded: true,
-          error,
-        });
-      });
-  };
-
-  handleSettingSearchParam = (param) => {
-    console.log('handler' + param)
-    fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${param}`) 
-    .then((response) => response.json())
-    .then((jsonifiedResponse) => (jsonifiedResponse.items))
-    .then((jsonifiedResponse) => {
-      console.log(jsonifiedResponse)
-      this.setState({
-        isLoaded: true,
-        books: jsonifiedResponse,
-        isSubmitted: true
-      });
-    })
-    .catch((error) => {
-    });
-  }
-
-
-   resetMe = (state) => {
-    this.setState({
-      error: null,
-      isLoaded: false,
-      books: [],
-      searchparam: null,
-      isSubmitted:false
-    })
-  } 
 }
 
 export default FindBooksResult;

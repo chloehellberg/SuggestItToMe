@@ -3,26 +3,27 @@ import PropTypes from "prop-types";
 
 
 function FindBooksForm(props){
+
+  function handleSettingFilter(event) {
+    event.preventDefault();
+    props.onSubmit(event.target.filter.value)
+  }
+
   return(
     <React.Fragment>
       <div className='align-items-center'>
-        <form onSubmit={handleSearchingForMovies}>
+        <form onSubmit={handleSettingFilter}>
           <br></br>
-          <input required type='text' name='searchparameter'></input><br></br>
+          <input required type='text' name='filter'></input><br></br>
           <button className='btn btn-secondary' type='submit'>Search</button>    
         </form>
       </div>
     </React.Fragment>
-  )
-
-  function handleSearchingForMovies(event) {
-    event.preventDefault();
-    props.onSubmit(event.target.searchparameter.value)
-  }
+  );
 }
 
 FindBooksForm.propTypes = {
-  handleSettingSearchParam: PropTypes.func,
+  makeAPICall: PropTypes.func,
 }
 
 export default FindBooksForm;
