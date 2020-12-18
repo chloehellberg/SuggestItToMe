@@ -14,6 +14,9 @@
 
 - Reading about adding a multi-filter function to project : https://medium.com/better-programming/creating-a-multi-filter-function-to-filter-out-multiple-attributes-javascript-react-rails-5aad8e272142
 
+### Research for Project 12.18.20
+
+- Copied repo to try another method out, but don't want to get too far away from what I have built so far. 
 
 # Suggest It To Me
 
