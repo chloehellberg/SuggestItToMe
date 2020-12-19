@@ -18,7 +18,9 @@
 
 - Copied repo to try another method out, but don't want to get too far away from what I have built so far. 
 - Still working on getting the API how I want it to display : https://pusher.com/tutorials/consume-restful-api-react
-
+ - On secondary (copy of app) messing with router to see if I can get it working. Following this : https://stackoverflow.com/questions/43230194/how-to-use-redirect-in-the-new-react-router-dom-of-reactjs#:~:text=You%20have%20to%20use%20setState,inside%20your%20render()%20method.
+ 
+ 
 # Suggest It To Me
 
 ### Console application using JavaScript, React and Redux that will attempt to expand a readers horizons by suggesting books they aren't typically inclined to read. Built: December 10th, 2020
