@@ -20,6 +20,11 @@
 - Still working on getting the API how I want it to display : https://pusher.com/tutorials/consume-restful-api-react
  - On secondary (copy of app) messing with router to see if I can get it working. Following this : https://stackoverflow.com/questions/43230194/how-to-use-redirect-in-the-new-react-router-dom-of-reactjs#:~:text=You%20have%20to%20use%20setState,inside%20your%20render()%20method.
  
+### Research for Project 12.19.20
+- Limiting items in a .map loop: https://stackoverflow.com/questions/42374873/limit-items-in-a-map-loop/42374933
+- React-Router: https://dev.to/projectescape/programmatic-navigation-in-react-3p1l
+
+
  
 # Suggest It To Me
 

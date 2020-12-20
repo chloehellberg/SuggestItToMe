@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
 
   const [category, setCategory] = useState('');
+  // const [checkboxValues, setCheckboxValues] = useState('');
 
   console.log('CATEGORY:', category);
 
@@ -17,6 +18,7 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <FindBooksForm setCategory={setCategory} />
+            {/* <FindBooksForm setcheckboxValues={setCheckboxValues} /> */}
           </Route>
           <Route path="/results">
             <FindBooksResult category={category} />

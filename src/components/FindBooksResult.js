@@ -12,8 +12,8 @@ function FindBooksResult(props) {
     fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${props.category}`) 
     .then((response) => response.json())
     .then((jsonifiedResponse) => {
-      // setBooks(jsonifiedResponse.items.slice(0,3));
-      setBooks(jsonifiedResponse.items);
+      setBooks(jsonifiedResponse.items.slice(0,3));
+      // setBooks(jsonifiedResponse.items);
     })
     .catch((error) => {
     });
