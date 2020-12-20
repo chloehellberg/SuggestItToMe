@@ -1,50 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from "./Header";
 import Footer from './Footer';
 import FindBooksResult from "./FindBooksResult";
+import FindBooksForm from './FindBooksForm';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
+
+  const [category, setCategory] = useState('');
+
+  console.log('CATEGORY:', category);
+
   return (
-  <React.Fragment>
-    <Header />
-    <FindBooksResult />
-    <Footer />
-  </React.Fragment>
+    <Router>
+      <Header />
+        <Switch>
+          <Route path="/" exact>
+            <FindBooksForm setCategory={setCategory} />
+          </Route>
+          <Route path="/results">
+            <FindBooksResult category={category} />
+          </Route>
+        </Switch>
+      <Footer />
+    </Router>
   );
 }
 
-export default App; 
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import Header from "./Header";
-// import Footer from './Footer';
-// import FindBooksForm from './FindBooksForm';
-// import FindBooksResult from './FindBooksResult';
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-
-// function App() {
-//   return (
-//     <Router>
-//       <div className="App">
-//         <Header />
-//         <Switch>
-//           <Route path="/" exact component={FindBooksForm} />
-//           <Route path="/findbooksresult" component={FindBooksResult} />
-//         </Switch>
-//         <Footer />
-//       </div>
-//     </Router>
-//   );
-// }
-
-// export default App; 
-
+export default App;

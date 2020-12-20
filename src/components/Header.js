@@ -1,16 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Header (){
+function Header() {
+
+  const navStyle = {
+    color: 'white'
+  };
+
   return (
-    <React.Fragment>
-    <div className="container">
-      <div className="header">
-        <h1>Header Here</h1>
-      <hr/>
-      </div>
-    </div>
-    </React.Fragment>
+    <nav>
+      <h3>Header Here</h3>
+        <ul className="nav-links">
+          <Link style={navStyle} to="/">
+            <li>Find Books Form</li>
+          </Link>
+        </ul>
+    </nav>
   );
-}
+};
 
 export default Header;

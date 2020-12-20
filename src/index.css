@@ -23,14 +23,15 @@ ul {
   text-align: center;
 }
 .dogPic {
-  width: 400px;
+  width: 200px;
   height: 300px;
-  object-fit: cover;
+  /* object-fit: cover; */
   object-fit: contain;
+  background-color: white;
 }
 .flip-card {
   background-color: transparent;
-  width: 300px;
+  width: 200px;
   height: 300px;
   perspective: 1000px;
   margin-bottom: 20px;
@@ -123,4 +124,23 @@ ul {
   background: indianred;
   outline: 2; 
   box-shadow:0 0 0;
+}
+
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(73, 79, 82);
+  color: white;
+}
+
+.nav-links{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
