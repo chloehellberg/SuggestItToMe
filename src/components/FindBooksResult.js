@@ -17,7 +17,7 @@ function FindBooksResult(props) {
     })
     .catch((error) => {
     });
-  }
+  };
   console.log("BOOKS ", books);
 
   return(
@@ -42,11 +42,11 @@ function FindBooksResult(props) {
       </ul>
     </React.Fragment>
   );
-}
+};
 
 FindBooksResult.propTypes = {
   categories: PropTypes.object
-}
+};
   
 export default FindBooksResult;
 

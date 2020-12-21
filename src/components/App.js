@@ -9,8 +9,7 @@ function App() {
 
   const [categories, setCategories] = useState([]);
 
- console.log('CATEGORIES', categories);
-
+  console.log('CATEGORIES', categories);
 
   return (
     <Router>
@@ -26,7 +25,7 @@ function App() {
       <Footer />
     </Router>
   );
-}
+};
 
 export default App;
 

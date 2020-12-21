@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import ReactDOM from 'react-dom';
-import { withRouter, Redirect, useHistory, Link } from 'react-router-dom';
+// import ReactDOM from 'react-dom';
+import { useHistory } from 'react-router-dom';
 import { useState } from 'react';
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -11,7 +11,6 @@ function FindBooksForm(props){
 
   const history = useHistory();   
   
-  // const [genres, setGenres] =  useState([]);
   const [localCategories, setLocalCategories] = useState([]);
 
   function handleChange(event) {
@@ -26,7 +25,6 @@ function FindBooksForm(props){
 
   console.log('LOCAL CATEGORIES', localCategories);
   
-
   return(
     <React.Fragment>
       <form onSubmit={handleSettingFilterForAPI}>
@@ -56,12 +54,11 @@ function FindBooksForm(props){
       </form>
     </React.Fragment>
   );
-}
+};
 
 FindBooksForm.propTypes = {
   setCategories: PropTypes.func
-}
-
+};
 
 export default FindBooksForm;
 
