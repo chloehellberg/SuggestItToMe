@@ -11,7 +11,7 @@ function FindBooksForm(props) {
 
   function handleSettingFilter(event) {
     event.preventDefault();
-    props.setCategory(event.target.filter.value);
+    props.setCategories(event.target.filter.value);
     history.push("/results");
   };
 
@@ -29,7 +29,7 @@ function FindBooksForm(props) {
 };
 
 FindBooksForm.propTypes = {
-  setCategory: PropTypes.func,
+  setCategories: PropTypes.func,
 };
 
 export default FindBooksForm;

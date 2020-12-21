@@ -9,7 +9,7 @@ function FindBooksResult(props) {
   },[]);
 
   const makeAPICall = () => {
-    fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${props.category}`) 
+    fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${props.categories}`) 
     .then((response) => response.json())
     .then((jsonifiedResponse) => {
       setBooks(jsonifiedResponse.items.slice(0,3));
@@ -45,7 +45,7 @@ function FindBooksResult(props) {
 };
 
 FindBooksResult.propTypes = {
-  category: PropTypes.string
+  categories: PropTypes.string
 };
   
 export default FindBooksResult;

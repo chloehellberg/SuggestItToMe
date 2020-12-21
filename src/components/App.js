@@ -7,21 +7,19 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
 
-  const [category, setCategory] = useState('');
-  // const [checkboxValues, setCheckboxValues] = useState('');
+  const [categories, setCategories] = useState('');
 
-  console.log('CATEGORY:', category);
+  console.log('CATEGORY:', categories);
 
   return (
     <Router>
       <Header />
         <Switch>
           <Route path="/" exact>
-            <FindBooksForm setCategory={setCategory} />
-            {/* <FindBooksForm setcheckboxValues={setCheckboxValues} /> */}
+            <FindBooksForm setCategories={setCategories} />
           </Route>
           <Route path="/results">
-            <FindBooksResult category={category} />
+            <FindBooksResult categories={categories} />
           </Route>
         </Switch>
       <Footer />
