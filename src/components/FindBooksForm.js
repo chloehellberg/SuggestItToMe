@@ -27,6 +27,7 @@ function FindBooksForm(props){
   
   return(
     <React.Fragment>
+      <div className="form-questions">
       <h5>Check genres that you typically read</h5>
       <form onSubmit={handleSettingFilterForAPI}>
         <FormGroup>
@@ -53,6 +54,7 @@ function FindBooksForm(props){
           <button className='btn btn-secondary' type='submit'>Search</button>
         </FormGroup>
       </form>
+      </div>
     </React.Fragment>
   );
 };

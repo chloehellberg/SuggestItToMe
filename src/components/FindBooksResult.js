@@ -21,6 +21,12 @@ function FindBooksResult(props) {
   };
   console.log("BOOKS ", books);
 
+  let filtrationProcess = 
+
+  function findOppositeCategories() {
+
+  }
+
   return(
     <React.Fragment>
       <h1>BookResults</h1>
