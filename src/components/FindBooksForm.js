@@ -27,6 +27,7 @@ function FindBooksForm(props){
   
   return(
     <React.Fragment>
+      <h5>Check genres that you typically read</h5>
       <form onSubmit={handleSettingFilterForAPI}>
         <FormGroup>
           <FormControlLabel

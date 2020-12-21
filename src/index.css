@@ -2,6 +2,7 @@ body {
   margin: 0% 10% 0% 10%;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 80px;
+  background-color: #E8CEBF;
 }
 h1 {
   text-align: center;
@@ -133,8 +134,8 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: rgb(73, 79, 82);
-  color: white;
+  background: #FDF8F5;
+  color: #4F4846;
 }
 
 .nav-links{
@@ -143,4 +144,8 @@ nav{
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
+
+.footer-container{
+  background: #FDF8F5;
 }

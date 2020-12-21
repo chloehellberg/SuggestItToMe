@@ -9,6 +9,7 @@ function FindBooksResult(props) {
   },[]);
 
   const makeAPICall = () => {
+    console.log("CALL API", props.categories)
     fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${props.categories}`) 
     .then((response) => response.json())
     .then((jsonifiedResponse) => {

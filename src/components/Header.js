@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 function Header() {
 
   const navStyle = {
-    color: 'white'
+    color: 'black',
   };
 
   return (
     <nav>
-      <h3>Header Here</h3>
+      <h3>suggest it to me</h3>
         <ul className="nav-links">
           <Link style={navStyle} to="/">
-            <li>Find Books Form</li>
+            <li>need a book to read?</li>
           </Link>
         </ul>
     </nav>
