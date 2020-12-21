@@ -28,7 +28,7 @@
 ### Research for Project 12.21.20
 - Looking into checkboxes: https://material-ui.com/api/checkbox/
 - Using this sandbox as guide: https://codesandbox.io/s/material-demo-forked-566mc?file=/demo.js
-
+- Still trying to implement checkboxes: http://react.tips/checkboxes-in-react-16/
  
 # Suggest It To Me
 
