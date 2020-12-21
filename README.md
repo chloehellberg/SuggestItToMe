@@ -25,6 +25,9 @@
 - React-Router: https://dev.to/projectescape/programmatic-navigation-in-react-3p1l
 
 
+### Research for Project 12.21.20
+- Looking into checkboxes: https://material-ui.com/api/checkbox/
+
  
 # Suggest It To Me
 
