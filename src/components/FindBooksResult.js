@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
-import { allCategoriesOffered } from './App';
 
 function FindBooksResult(props) {
   const [books, setBooks] = useState([]);
@@ -21,14 +20,10 @@ function FindBooksResult(props) {
     });
   };
   
-
-  let filterCategories = allCategoriesOffered.filter(category => !props.categories.includes(category));
-  console.log("ALL CATEGORIES OFFERED: ", allCategoriesOffered);
-  console.log("CATEGORIES: ", props.categories);
-  console.log("FILTER CATEGORES: ", filterCategories)
+  
 
   function findOppositeCategories() {
-
+ // take array of filteredCategories randomize to find one. save in variable and pass that new variable
   }
 
 

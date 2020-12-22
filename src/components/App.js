@@ -9,18 +9,19 @@ export const allCategoriesOffered = ["architecture", "art", "biography", "autobi
 
 
 function App() {
-
   const [categories, setCategories] = useState([]);
-  
 
-  console.log('CATEGORIES', categories);
+  const filterAndSetCategories = (categories) => {
+    const filteredCategories = allCategoriesOffered.filter(category => !categories.includes(category));
+    setCategories(filteredCategories);
+  }
 
   return (
     <Router>
       <Header />
         <Switch>
           <Route path="/" exact>
-            <FindBooksForm setCategories={setCategories} />
+            <FindBooksForm filterAndSetCategories={filterAndSetCategories} />
           </Route>
           <Route path="/results">
             <FindBooksResult categories={categories} />
