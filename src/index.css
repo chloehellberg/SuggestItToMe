@@ -4,6 +4,7 @@ body {
   font-family: 'Abril Fatface', cursive;
   margin-bottom: 80px;
   background-color: #E8CEBF;
+  min-height: 100%;
 }
 h1 {
   text-align: center;
@@ -13,18 +14,18 @@ h1 {
 li {
   list-style: none;
 }
-img {
+/* img {
   width: 50%
-}
+} */
 ul {
   display: inline-block;
-  columns: 3 auto;
+  columns: 4 auto;
  
 }
 .center-align {
   text-align: center;
 }
-.dogPic {
+.bookPic {
   width: 200px;
   height: 300px;
   /* object-fit: cover; */
@@ -65,7 +66,7 @@ ul {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #FDF8F5;
   color: black;
 }
 
@@ -87,16 +88,16 @@ ul {
 }
 
 @media only screen and (max-width: 840px) {
-  .dogPic {
-    width: 240px;
-    height: 240px;
+  .bookPic {
+    width: 230px;
+    height: 230px;
     object-fit: cover;
   }
   
   .flip-card {
     background-color: transparent;
-    width: 240px;
-    height: 240px;
+    width: 230px;
+    height: 230px;
     perspective: 1000px;
     margin-bottom: 20px;
   }
@@ -138,7 +139,7 @@ ul {
   position: absolute;
   bottom: 0;
   width: 100%;
-
+  background: #FDF8F5;
 }
 
 nav{
@@ -174,3 +175,18 @@ nav{
 /* .categories {
   font-family:  'Aclonica', sans-serif;
 } */
+
+h4{
+  color: #FDF8F5;
+}
+
+.book-stacks{
+  width: 30%;
+  opacity: 0.8;
+  position: relative; 
+  /* width: auto; */
+  /* margin-bottom: 0; */
+ float: left;
+ /* padding: 0 20px 20px 0; */
+ margin-left: -105px;
+}

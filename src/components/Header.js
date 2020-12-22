@@ -16,6 +16,11 @@ function Header() {
             <li>need a book to read?</li>
             </button>
           </Link>
+          <Link to="/about">
+            <button className='btn'>
+            <li>about</li>
+            </button>
+          </Link>
         </ul>
     </nav>
   );

@@ -28,8 +28,9 @@ function FindBooksForm(props){
   return(
     <React.Fragment>
       <div className="form-questions">
-      <h5>Check genres that you typically read</h5>
-      <form class="categories" onSubmit={handleSettingFilterForAPI}>
+      <img className="book-stacks" src="https://data.whicdn.com/images/40127583/original.jpg" alt="stackOfBooks"/>
+      <h4>check genres that you typically read...</h4>
+      <form className="categories" onSubmit={handleSettingFilterForAPI}>
         <FormGroup>
           <FormControlLabel
             control={
