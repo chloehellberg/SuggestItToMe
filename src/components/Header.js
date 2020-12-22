@@ -17,7 +17,13 @@ function Header() {
             <li>about</li>
             </button>
           </Link>
+          <Link to="/signIn">
+            <button className='btn'>
+            <li>sign in</li>
+            </button>
+          </Link>
         </ul>
+        
     </nav>
   );
 };

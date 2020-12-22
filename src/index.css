@@ -14,16 +14,20 @@ h1 {
 li {
   list-style: none;
 }
-/* img {
-  width: 50%
-} */
+
 ul {
   display: inline-block;
   columns: 4 auto;
  
 }
+.bookContainer {
+  display: flex;
+  justify-content: center;
+}
 .center-align {
-  text-align: center;
+  /* text-align: center; */
+  /* padding: 10px; */
+  width: 1100px;
 }
 .bookPic {
   width: 200px;
@@ -34,6 +38,11 @@ ul {
   border-radius: 16px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
+
+/* .bookpic:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  transform: translate(0, -64px) scale(1.1);
+} */
 .flip-card {
   border-radius: 16px;
   background-color: transparent;
@@ -44,7 +53,6 @@ ul {
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
- 
 }
 
 .flip-card-inner {
@@ -217,4 +225,8 @@ h4{
  margin-left: -105px;
  display: flex;
  align-items: flex-end;
+}
+
+h1 {
+  color: #4F4846;
 }

@@ -24,23 +24,27 @@ function FindBooksResult(props) {
   return(
     <React.Fragment>
       <h1>BookResults</h1>
-      <ul className='center-align'>
-        {books.map((books, index) => (
-          <div key={index} className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img className="bookPic" src={books.volumeInfo.imageLinks.thumbnail} alt="googleAPIImage" />
-              </div>
-              <li>
-                <div className="flip-card-back">
-                  <p>Title: {books.volumeInfo.title}</p>
-                  <p>Info: {books.volumeInfo.authors}</p>
+      <div className='bookContainer'>
+        <ul className='center-align'>
+          {books.map((books, index) => (
+            <div key={index} className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <img className="bookPic" src={books.volumeInfo.imageLinks.thumbnail} alt="googleAPIImage" />
                 </div>
-              </li>
+                <li>
+                  <div className="flip-card-back">
+                    <p>Title: {books.volumeInfo.title}</p>
+                    <p>Info: {books.volumeInfo.authors}</p>
+                    <a href='${books.volumeInfo.previewLink}'><button className='btn'>info</button></a>
+                  </div>
+                </li>
+              </div>
             </div>
-          </div>
-        ))}
-      </ul>
+          ))}
+          
+        </ul>
+      </div>
     </React.Fragment>
   );
 };
