@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
+import { allCategoriesOffered } from './App';
 
 function FindBooksResult(props) {
   const [books, setBooks] = useState([]);
+  console.log("BOOKS ", books);
 
   useEffect(() => {
     makeAPICall();
@@ -18,12 +20,18 @@ function FindBooksResult(props) {
     .catch((error) => {
     });
   };
-  console.log("BOOKS ", books);
+  
 
+  let filterCategories = allCategoriesOffered.filter(category => !props.categories.includes(category));
+  console.log("ALL CATEGORIES OFFERED: ", allCategoriesOffered);
+  console.log("CATEGORIES: ", props.categories);
+  console.log("FILTER CATEGORES: ", filterCategories)
 
   function findOppositeCategories() {
 
   }
+
+
 
   return(
     <React.Fragment>

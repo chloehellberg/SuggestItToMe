@@ -25,8 +25,7 @@ function FindBooksForm(props){
     history.push('/results');
   };
 
-  console.log('LOCAL CATEGORIES', localCategories);
-  // console.log('ALL CATEGORIES OFFERED', allCategoriesOffered);
+  // console.log('LOCAL CATEGORIES', localCategories);
   
   return(
     <React.Fragment>
