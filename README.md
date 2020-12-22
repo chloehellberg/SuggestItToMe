@@ -33,6 +33,7 @@
 
 ### Research for Project 12.22.20
 - Checking Google API to find if I can get a list of subjects(categories/genres) can be generated so I can use it as a large array for searching purposes: https://stackoverflow.com/questions/48660015/how-to-get-list-of-categories-in-google-books-api
+- May need to use this list of book genres to start: https://bisg.org/page/bisacedition
  
 # Suggest It To Me
 

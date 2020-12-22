@@ -20,7 +20,6 @@ function FindBooksResult(props) {
   };
   console.log("BOOKS ", books);
 
-  let filtrationProcess = 
 
   function findOppositeCategories() {
 
@@ -51,7 +50,7 @@ function FindBooksResult(props) {
 };
 
 FindBooksResult.propTypes = {
-  categories: PropTypes.object
+  categories: PropTypes.array
 };
   
 export default FindBooksResult;

@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 function Header() {
 
   return (
-    <nav class="wrap">
-      <h3 class="full-width">suggest it to me</h3>
+    <nav className="wrap">
+      <h3 className="full-width">suggest it to me</h3>
         <ul className="nav-links">
           <Link to="/">
             <button className='btn'>

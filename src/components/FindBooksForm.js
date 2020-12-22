@@ -5,12 +5,15 @@ import { useState } from 'react';
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
+import { allCategoriesOffered } from './App';
 
 function FindBooksForm(props){
 
   const history = useHistory();   
   
   const [localCategories, setLocalCategories] = useState([]);
+
+
 
   function handleChange(event) {
     setLocalCategories([...localCategories, event.target.name])
@@ -23,6 +26,7 @@ function FindBooksForm(props){
   };
 
   console.log('LOCAL CATEGORIES', localCategories);
+  // console.log('ALL CATEGORIES OFFERED', allCategoriesOffered);
   
   return(
     <React.Fragment>
@@ -31,26 +35,19 @@ function FindBooksForm(props){
       <h4>check genres that you typically read...</h4>
       <form className="categories" onSubmit={handleSettingFilterForAPI}>
         <FormGroup>
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={localCategories.mystery}
-                type="checkbox"
-                onChange={handleChange}
-                name="mystery" />
-            }
-            label="mystery"
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={localCategories.fiction}
-                type="checkbox"
-                onChange={handleChange}
-                name="fiction" />
-            }
-            label="fiction"
-          />
+          {allCategoriesOffered.map((category, index) => {
+            return <FormControlLabel
+              key={index}
+              control={
+                <Checkbox
+                  checked={localCategories[category]}
+                  type="checkbox"
+                  onChange={handleChange}
+                  name={category} />
+              }
+              label={category}
+            /> 
+          })}
           <button className='btn' type='submit'>find books</button>
         </FormGroup>
       </form>
