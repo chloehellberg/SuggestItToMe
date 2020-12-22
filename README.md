@@ -30,6 +30,9 @@
 - Using this sandbox as guide: https://codesandbox.io/s/material-demo-forked-566mc?file=/demo.js
 - Still trying to implement checkboxes: http://react.tips/checkboxes-in-react-16/
 - CSS Sticky footer: https://forum.freecodecamp.org/t/solved-floating-sticky-footer-does-not-stick-float-to-bottom-of-viewport-react-css-help/326328, https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551
+
+### Research for Project 12.22.20
+- Checking Google API to find if I can get a list of subjects(categories/genres) can be generated so I can use it as a large array for searching purposes: https://stackoverflow.com/questions/48660015/how-to-get-list-of-categories-in-google-books-api
  
 # Suggest It To Me
 
