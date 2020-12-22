@@ -36,7 +36,7 @@ function FindBooksResult(props) {
                   <div className="flip-card-back">
                     <p>Title: {books.volumeInfo.title}</p>
                     <p>Info: {books.volumeInfo.authors}</p>
-                    <a href='${books.volumeInfo.previewLink}'><button className='btn'>info</button></a>
+                    <a href={books.volumeInfo.previewLink} target="_blank"><button className='btn'>info</button></a>
                   </div>
                 </li>
               </div>
