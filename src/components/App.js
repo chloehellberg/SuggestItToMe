@@ -13,9 +13,13 @@ function App() {
 
   const filterAndSetCategories = (categories) => {
     const filteredCategories = allCategoriesOffered.filter(category => !categories.includes(category));
-    setCategories(filteredCategories);
-  }
+    const findRandomCategory = filteredCategories[Math.floor(Math.random() * filteredCategories.length)];
+    console.log("Random Category", findRandomCategory);
+    setCategories(findRandomCategory);
+  };
 
+
+ 
   return (
     <Router>
       <Header />
