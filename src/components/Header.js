@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 
 function Header() {
 
-  // const navStyle = {
-  //   color: 'black',
-  // };
-
   return (
     <nav class="wrap">
       <h3 class="full-width">suggest it to me</h3>

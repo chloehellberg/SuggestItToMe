@@ -14,7 +14,6 @@ function FindBooksResult(props) {
     .then((response) => response.json())
     .then((jsonifiedResponse) => {
       setBooks(jsonifiedResponse.items.slice(0,4));
-      // setBooks(jsonifiedResponse.items);
     })
     .catch((error) => {
     });
