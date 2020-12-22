@@ -29,7 +29,7 @@ function FindBooksForm(props){
     <React.Fragment>
       <div className="form-questions">
       <h5>Check genres that you typically read</h5>
-      <form onSubmit={handleSettingFilterForAPI}>
+      <form class="categories" onSubmit={handleSettingFilterForAPI}>
         <FormGroup>
           <FormControlLabel
             control={
@@ -39,7 +39,7 @@ function FindBooksForm(props){
                 onChange={handleChange}
                 name="mystery" />
             }
-            label="Mystery"
+            label="mystery"
           />
           <FormControlLabel
             control={
@@ -49,9 +49,9 @@ function FindBooksForm(props){
                 onChange={handleChange}
                 name="fiction" />
             }
-            label="Fiction"
+            label="fiction"
           />
-          <button className='btn btn-secondary' type='submit'>Search</button>
+          <button className='btn' type='submit'>find books</button>
         </FormGroup>
       </form>
       </div>

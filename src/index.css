@@ -1,6 +1,7 @@
 body {
   /* margin: 0% 10% 0% 10%; */   /* to remove space around header/footer*/
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Abril Fatface', cursive;
   margin-bottom: 80px;
   background-color: #E8CEBF;
 }
@@ -122,9 +123,14 @@ ul {
 }
 
 .btn:focus, .btn.focus {
-  background: indianred;
+  /* background: black; */
   outline: 2; 
   box-shadow:0 0 0;
+}
+
+.btn {
+  background-color: #266150;
+  color: #FDF8F5;
 }
 
 
@@ -164,3 +170,7 @@ nav{
 .footer-container{
   background: #FDF8F5;
 }
+
+/* .categories {
+  font-family:  'Aclonica', sans-serif;
+} */
