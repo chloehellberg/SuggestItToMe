@@ -5,6 +5,8 @@ import FindBooksResult from "./FindBooksResult";
 import FindBooksForm from './FindBooksForm';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+
+
 export const allCategoriesOffered = ["architecture", "art", "biography", "autobiography", "business & economics", "graphic novels", "computers", "cooking", "design", "drama", "education", "fiction", "history", "poetry", "political science", "science fiction", "mystery", "true crime", "fantasy", "nonfiction"];
 
 
@@ -13,13 +15,10 @@ function App() {
 
   const filterAndSetCategories = (categories) => {
     const filteredCategories = allCategoriesOffered.filter(category => !categories.includes(category));
-    const findRandomCategory = filteredCategories[Math.floor(Math.random() * filteredCategories.length)];
-    console.log("Random Category", findRandomCategory);
-    setCategories(findRandomCategory);
+    const randomCategory = filteredCategories[Math.floor(Math.random() * filteredCategories.length)];
+    setCategories(randomCategory);
   };
 
-
- 
   return (
     <Router>
       <Header />
@@ -37,4 +36,3 @@ function App() {
 };
 
 export default App;
-

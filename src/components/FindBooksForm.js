@@ -14,7 +14,6 @@ function FindBooksForm(props){
   const [localCategories, setLocalCategories] = useState([]);
 
 
-
   function handleChange(event) {
     setLocalCategories([...localCategories, event.target.name])
   };
@@ -25,7 +24,6 @@ function FindBooksForm(props){
     history.push('/results');
   };
 
-  // console.log('LOCAL CATEGORIES', localCategories);
   
   return(
     <React.Fragment>

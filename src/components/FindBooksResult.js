@@ -20,13 +20,6 @@ function FindBooksResult(props) {
     });
   };
   
-  
-
-  function findOppositeCategories() {
- // take array of filteredCategories randomize to find one. save in variable and pass that new variable
-  }
-
-
 
   return(
     <React.Fragment>
@@ -57,4 +50,3 @@ FindBooksResult.propTypes = {
 };
   
 export default FindBooksResult;
-
