@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from './Footer';
 import FindBooksResult from "./FindBooksResult";
 import FindBooksForm from './FindBooksForm';
+import About from './About';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route path="/results">
             <FindBooksResult categories={categories} />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
       <Footer />
