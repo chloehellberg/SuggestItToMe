@@ -35,7 +35,13 @@
   - When I was in college I registered for an English class expecting to read the classics but isntead got an entire course devoted to utopian/dystopian science fiction. I expected to hate it and drop since I had never read any sci-fi in my life - no one had ever suggested this particular genre to me before. Of course what ended up happening was an awakening and science fiction is now counted as one of my favorite genres and thus the catalyst for this project.
 - Project Purpose or Goal:
   - What I love most about reading is that I can dive into perspectives of all different kinds of people and types of places and hopefully gain better understanding of others who aren't me. It's not helpful though when the only books suggested to me keep me in the same lane and don't allow me to expand my horizons. I'm also tired of having my Google footprint follow me around wherever I go and determine what I may like or not based on my previous experiences. I'm setting out to build the opposite of a "Books Suggested For You" application - more of a, "Books Not Typically Suggested For You" website. Perhaps there is a book or genre out there that you've never considered and no one else has thought to suggest it to you either - until now!
-  
+
+  <br />
+  <br />
+  <img src="./Homepage.png">
+  <br />
+  <br />
+  <img src="./ResultsPage.png">
 
 ### Capstone Proposal
 - Name of Project: "Suggest It To Me" 
