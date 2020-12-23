@@ -23,7 +23,7 @@ function FindBooksResult(props) {
 
   return(
     <React.Fragment>
-      <h1>BookResults</h1>
+      <h1><u>BookResults</u> - you got...{props.categories}</h1>
       <div className='bookContainer'>
         <ul className='center-align'>
           {books.map((books, index) => (

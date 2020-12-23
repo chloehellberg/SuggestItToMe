@@ -9,7 +9,7 @@ function About() {
      <h1><u>About</u></h1>
       <div className="card">
         <div className="aboutContainer">
-          <p>This project was created...</p>
+          <p>Coming soon...</p>
         </div>
       </div>
    </React.Fragment>

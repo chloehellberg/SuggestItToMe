@@ -4,6 +4,7 @@ import Footer from './Footer';
 import FindBooksResult from "./FindBooksResult";
 import FindBooksForm from './FindBooksForm';
 import About from './About';
+import SignIn from './SignIn';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/signIn">
+            <SignIn />
           </Route>
         </Switch>
       <Footer />
