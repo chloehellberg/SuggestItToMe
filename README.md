@@ -1,8 +1,10 @@
 # Suggest It To Me
 
-### Console application using JavaScript, React and Redux that will attempt to expand a readers horizons by suggesting books they aren't typically inclined to read. Built: December 10th, 2020
+### Console application using JavaScript with React that will attempt to expand a readers horizons by suggesting books they aren't typically inclined to read. 
 
-#### <a href="https://github.com/chloehellberg">By: Chloe Hellberg</a> 
+### Built: December 10th, 2020, updated December 23rd, 2020
+
+#### <a href="https://github.com/chloehellberg">Created By: Chloe Hellberg</a> 
 
 
 <img src="sitting-reading.png">
@@ -36,7 +38,7 @@
   
 
 ### Capstone Proposal
-- Name of Project: "Books Not Typically Suggested To You..." (Product Name WIP)
+- Name of Project: "Suggest It To Me" 
 
 - MVP (Minimum Viable Product):
   - Users can go to a suggestion form, choose a few genres they typically like (ex. Historical Fiction, Adventure, Mystery) and product will spit out three book suggestions that doln't fall within those categories
@@ -71,7 +73,7 @@
 
 ### 🦠 Known Bugs
 
-* None known yet. <a href="https://github.com/chloehellberg/SuggestItToMe/issues">Please report if you discover any.</a>
+* No known bugs at this time. <a href="https://github.com/chloehellberg/SuggestItToMe/issues">Please report if you discover any.</a>
 
 ### 🛠 Built With
 * [React](https://reactjs.org/)
@@ -107,14 +109,7 @@
   5) View or Edit:
       * Code Editor - Run the command `atom .` or `code .` to open the project in Atom or VisualStudio Code respectively for review and editing.
       * Text Editor - Open by double clicking on any of the files to open in a text editor.
-  6) In the project directory (tap-room), type `npm start` to run the application in development mode.  Open [http://localhost:3000](http://localhost:3000) to view it in the browser. Page will reload if you make edits. You will also see any lint errors in the console.
-
-
-  #### Download
-
-  1) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
-  2) Click 'Download ZIP' and extract the directory to whichever location suits you best.
-  3) Open by double clicking on any of the files to open in a text editor.
+  6) In the project directory (suggest-it-to-me), type `npm install` to download dependencies. After they install, type `npm start` to run the application in development mode.  Open [http://localhost:3000](http://localhost:3000) to view it in the browser. Page will reload if you make edits. You will also see any lint errors in the console.
 
 
 
@@ -136,7 +131,19 @@
 
 ### ✉️ Contact and Support
 
-If you have any feedback or concerns, please contact one of the contributors.
+If you have any feedback or concerns, please contact me!
+
+------------------------------
+
+### Helpful Resources
+- Google Books API : https://developers.google.com/books
+- Goodreads API : https://www.goodreads.com/api/documentation
+- Youtube on React Router: https://www.youtube.com/watch?v=Law7wfdg_ls&ab_channel=DevEd
+- On multi-filtering: https://medium.com/better-programming/creating-a-multi-filter-function-to-filter-out-multiple-attributes-javascript-react-rails-5aad8e272142
+- About React-Router: https://dev.to/projectescape/programmatic-navigation-in-react-3p1l
+- Material UI checkboxes: https://material-ui.com/api/checkbox/
+- Book Genres: https://bisg.org/page/bisacedition
+- Another project utilizing Google API: https://github.com/liyasthomas/books
 
 ------------------------------
 
@@ -165,46 +172,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 ------------------------------
-
-
-
-### Research For Project 12.11.20
-
-- Reading about Google Books API : https://developers.google.com/books
-  - API acquired
-- Researching about Goodreads API : https://www.goodreads.com/api/documentation
-- Start forming diagram for components build out. Reading : https://konstantinmuenster.medium.com/how-to-plan-and-organize-a-react-project-by-building-a-weather-app-9
-- Watching Youtube vid about react router. Now following along with tutorial. Will be using instead of the toggle between pages. : https://www.youtube.com/watch?v=Law7wfdg_ls&ab_channel=DevEd
-  - Testing out Google API with this tutorial - fetch is working
-- Reading about planning/organizing my app : https://konstantinmuenster.medium.com/how-to-plan-and-organize-a-react-project-by-building-a-weather-app-95175b11bd01
-- Book Flip CSS : http://jsfiddle.net/pixelass/TW43V/17/
-- Watching video about context API : https://www.youtube.com/watch?v=35lXWvCuM8o&ab_channel=DevEd
-
-### Research For Project 12.17.20
-
-- Reading about adding a multi-filter function to project : https://medium.com/better-programming/creating-a-multi-filter-function-to-filter-out-multiple-attributes-javascript-react-rails-5aad8e272142
-
-### Research for Project 12.18.20
-
-- Copied repo to try another method out, but don't want to get too far away from what I have built so far. 
-- Still working on getting the API how I want it to display : https://pusher.com/tutorials/consume-restful-api-react
- - On secondary (copy of app) messing with router to see if I can get it working. Following this : https://stackoverflow.com/questions/43230194/how-to-use-redirect-in-the-new-react-router-dom-of-reactjs#:~:text=You%20have%20to%20use%20setState,inside%20your%20render()%20method.
- 
-### Research for Project 12.19.20
-- Limiting items in a .map loop: https://stackoverflow.com/questions/42374873/limit-items-in-a-map-loop/42374933
-- React-Router: https://dev.to/projectescape/programmatic-navigation-in-react-3p1l
-
-
-### Research for Project 12.21.20
-- Looking into checkboxes: https://material-ui.com/api/checkbox/
-- Using this sandbox as guide: https://codesandbox.io/s/material-demo-forked-566mc?file=/demo.js
-- Still trying to implement checkboxes: http://react.tips/checkboxes-in-react-16/
-- CSS Sticky footer: https://forum.freecodecamp.org/t/solved-floating-sticky-footer-does-not-stick-float-to-bottom-of-viewport-react-css-help/326328, https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551
-
-### Research for Project 12.22.20
-- Checking Google API to find if I can get a list of subjects(categories/genres) can be generated so I can use it as a large array for searching purposes: https://stackoverflow.com/questions/48660015/how-to-get-list-of-categories-in-google-books-api
-- May need to use this list of book genres to start: https://bisg.org/page/bisacedition
-- Another project utilizing Google API: https://github.com/liyasthomas/books
-
 
 <center><a href="#">Return to Top</a></center>
