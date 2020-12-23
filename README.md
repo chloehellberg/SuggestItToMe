@@ -1,42 +1,3 @@
-### Research For Project 12.11.20
-
-- Reading about Google Books API : https://developers.google.com/books
-  - API acquired
-- Researching about Goodreads API : https://www.goodreads.com/api/documentation
-- Start forming diagram for components build out. Reading : https://konstantinmuenster.medium.com/how-to-plan-and-organize-a-react-project-by-building-a-weather-app-9
-- Watching Youtube vid about react router. Now following along with tutorial. Will be using instead of the toggle between pages. : https://www.youtube.com/watch?v=Law7wfdg_ls&ab_channel=DevEd
-  - Testing out Google API with this tutorial - fetch is working
-- Reading about planning/organizing my app : https://konstantinmuenster.medium.com/how-to-plan-and-organize-a-react-project-by-building-a-weather-app-95175b11bd01
-- Book Flip CSS : http://jsfiddle.net/pixelass/TW43V/17/
-- Watching video about context API : https://www.youtube.com/watch?v=35lXWvCuM8o&ab_channel=DevEd
-
-### Research For Project 12.17.20
-
-- Reading about adding a multi-filter function to project : https://medium.com/better-programming/creating-a-multi-filter-function-to-filter-out-multiple-attributes-javascript-react-rails-5aad8e272142
-
-### Research for Project 12.18.20
-
-- Copied repo to try another method out, but don't want to get too far away from what I have built so far. 
-- Still working on getting the API how I want it to display : https://pusher.com/tutorials/consume-restful-api-react
- - On secondary (copy of app) messing with router to see if I can get it working. Following this : https://stackoverflow.com/questions/43230194/how-to-use-redirect-in-the-new-react-router-dom-of-reactjs#:~:text=You%20have%20to%20use%20setState,inside%20your%20render()%20method.
- 
-### Research for Project 12.19.20
-- Limiting items in a .map loop: https://stackoverflow.com/questions/42374873/limit-items-in-a-map-loop/42374933
-- React-Router: https://dev.to/projectescape/programmatic-navigation-in-react-3p1l
-
-
-### Research for Project 12.21.20
-- Looking into checkboxes: https://material-ui.com/api/checkbox/
-- Using this sandbox as guide: https://codesandbox.io/s/material-demo-forked-566mc?file=/demo.js
-- Still trying to implement checkboxes: http://react.tips/checkboxes-in-react-16/
-- CSS Sticky footer: https://forum.freecodecamp.org/t/solved-floating-sticky-footer-does-not-stick-float-to-bottom-of-viewport-react-css-help/326328, https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551
-
-### Research for Project 12.22.20
-- Checking Google API to find if I can get a list of subjects(categories/genres) can be generated so I can use it as a large array for searching purposes: https://stackoverflow.com/questions/48660015/how-to-get-list-of-categories-in-google-books-api
-- May need to use this list of book genres to start: https://bisg.org/page/bisacedition
-- Another project utilizing Google API: https://github.com/liyasthomas/books
-
- 
 # Suggest It To Me
 
 ### Console application using JavaScript, React and Redux that will attempt to expand a readers horizons by suggesting books they aren't typically inclined to read. Built: December 10th, 2020
@@ -105,6 +66,7 @@
 ### Suggest It To Me Components Diagram
 
 <img src="./SITMComponents-v1.png">
+
 
 
 ### 🦠 Known Bugs
@@ -203,5 +165,46 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 ------------------------------
+
+
+
+### Research For Project 12.11.20
+
+- Reading about Google Books API : https://developers.google.com/books
+  - API acquired
+- Researching about Goodreads API : https://www.goodreads.com/api/documentation
+- Start forming diagram for components build out. Reading : https://konstantinmuenster.medium.com/how-to-plan-and-organize-a-react-project-by-building-a-weather-app-9
+- Watching Youtube vid about react router. Now following along with tutorial. Will be using instead of the toggle between pages. : https://www.youtube.com/watch?v=Law7wfdg_ls&ab_channel=DevEd
+  - Testing out Google API with this tutorial - fetch is working
+- Reading about planning/organizing my app : https://konstantinmuenster.medium.com/how-to-plan-and-organize-a-react-project-by-building-a-weather-app-95175b11bd01
+- Book Flip CSS : http://jsfiddle.net/pixelass/TW43V/17/
+- Watching video about context API : https://www.youtube.com/watch?v=35lXWvCuM8o&ab_channel=DevEd
+
+### Research For Project 12.17.20
+
+- Reading about adding a multi-filter function to project : https://medium.com/better-programming/creating-a-multi-filter-function-to-filter-out-multiple-attributes-javascript-react-rails-5aad8e272142
+
+### Research for Project 12.18.20
+
+- Copied repo to try another method out, but don't want to get too far away from what I have built so far. 
+- Still working on getting the API how I want it to display : https://pusher.com/tutorials/consume-restful-api-react
+ - On secondary (copy of app) messing with router to see if I can get it working. Following this : https://stackoverflow.com/questions/43230194/how-to-use-redirect-in-the-new-react-router-dom-of-reactjs#:~:text=You%20have%20to%20use%20setState,inside%20your%20render()%20method.
+ 
+### Research for Project 12.19.20
+- Limiting items in a .map loop: https://stackoverflow.com/questions/42374873/limit-items-in-a-map-loop/42374933
+- React-Router: https://dev.to/projectescape/programmatic-navigation-in-react-3p1l
+
+
+### Research for Project 12.21.20
+- Looking into checkboxes: https://material-ui.com/api/checkbox/
+- Using this sandbox as guide: https://codesandbox.io/s/material-demo-forked-566mc?file=/demo.js
+- Still trying to implement checkboxes: http://react.tips/checkboxes-in-react-16/
+- CSS Sticky footer: https://forum.freecodecamp.org/t/solved-floating-sticky-footer-does-not-stick-float-to-bottom-of-viewport-react-css-help/326328, https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551
+
+### Research for Project 12.22.20
+- Checking Google API to find if I can get a list of subjects(categories/genres) can be generated so I can use it as a large array for searching purposes: https://stackoverflow.com/questions/48660015/how-to-get-list-of-categories-in-google-books-api
+- May need to use this list of book genres to start: https://bisg.org/page/bisacedition
+- Another project utilizing Google API: https://github.com/liyasthomas/books
+
 
 <center><a href="#">Return to Top</a></center>

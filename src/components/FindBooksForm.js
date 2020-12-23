@@ -6,6 +6,7 @@ import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import { allCategoriesOffered } from './App';
+import bookStacks from './../img/bookStacks.jpg';
 
 function FindBooksForm(props){
 
@@ -28,7 +29,7 @@ function FindBooksForm(props){
   return(
     <React.Fragment>
       <div className="form-questions">
-      <img className="book-stacks" src="https://data.whicdn.com/images/40127583/original.jpg" alt="stackOfBooks"/>
+      <img className="book-stacks" src={bookStacks} alt="books" />
       <h5>Check genres that you typically read...find books that you typically don't</h5>
       
       <form className="categories" onSubmit={handleSettingFilterForAPI}>
