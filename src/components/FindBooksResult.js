@@ -7,6 +7,7 @@ function FindBooksResult(props) {
 
   useEffect(() => {
     makeAPICall();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const makeAPICall = () => {
